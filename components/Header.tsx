@@ -51,14 +51,12 @@ function Header({}: Props) {
           duration: 1,
         }}
       >
-        <Link href={"#contact"}>
-          <SocialIcon
-            className="cursor-pointer"
-            network="email"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-        </Link>
+        <SocialIcon
+          className="cursor-pointer"
+          network="email"
+          fgColor="gray"
+          bgColor="transparent"
+        />
 
         <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
           {"Let's "} Catch up
