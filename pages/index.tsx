@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <div className="overflow-x-hidden bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory z-0">
       <Head>
-        <title>Ak's Portfolio</title>
+        <title>{"Ak's"} Portfolio</title>
       </Head>
 
       <Header />

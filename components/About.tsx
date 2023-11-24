@@ -38,7 +38,7 @@ function About({}: Props) {
           Background
         </h4>
         <p className="text-xs sm:text-sm text-center lg:text-lg">
-          🚀 Greetings! I'm AK, a nocturnal frontend sorcerer boasting expertise
+          {`🚀 Greetings! I'm AK, a nocturnal frontend sorcerer boasting expertise
           in NextJS, ReactJS, Redux, jotai, and the enchanting arts of Tailwind
           CSS and SASS. With a magical coding journey spanning over 5 years,
           I've summoned responsive, user-friendly web spells that deliver a
@@ -50,7 +50,7 @@ function About({}: Props) {
           mission is to conjure spells of clean, maintainable code—a testament
           to my commitment to creating digital experiences that transcend time.
           Let's embark on a journey together, where code dances and user
-          experiences sparkle in the mystical glow of technology! ✨🌟
+          experiences sparkle in the mystical glow of technology! ✨🌟`}
         </p>
       </motion.div>
     </div>

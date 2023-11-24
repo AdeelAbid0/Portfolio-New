@@ -58,7 +58,7 @@ function Header({}: Props) {
         />
 
         <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-          Let's Catch up
+          {"Let's "} Catch up
         </p>
       </motion.div>
     </header>
