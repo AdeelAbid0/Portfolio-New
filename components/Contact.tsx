@@ -21,13 +21,13 @@ function Contact({}: Props) {
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
-          I have got just what you need.{" "}
+      <div className="flex flex-col pt-10 space-y-10">
+        <h4 className="text-lg sm:text-2xl md:text-4xl font-semibold text-center sm:whitespace-nowrap whitespace-break-spaces">
+          I have got just what you need.{" \n"}
           <span className="underline decoration-[#F7AB0A]/50">Lets Talk</span>
         </h4>
 
-        <div className="space-y-10">
+        <div className="space-y-5 md:space-y-10">
           <div className="flex item-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
             <p>+92 341 4307524</p>
@@ -44,9 +44,9 @@ function Contact({}: Props) {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 w-full sm:w-fit sm:px-0 px-3 mx-auto"
         >
-          <div className="flex space-x-2">
+          <div className="flex flex-col  sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0">
             <input
               {...register("name")}
               placeholder="Name"
@@ -73,7 +73,7 @@ function Contact({}: Props) {
           />
           <button
             type="submit"
-            className="bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#f7ab0a] py-2 sm:py-5 sm:px-10 rounded-md text-black font-bold text-lg"
           >
             Submit
           </button>

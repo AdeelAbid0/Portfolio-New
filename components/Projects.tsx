@@ -66,31 +66,33 @@ function Projects({}: Props) {
         {projects.map((project, i) => (
           <div
             key={i}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-5 sm:p-20 md:p-44 h-screen"
           >
             <motion.div
               initial={{ y: -300, opacity: 0 }}
               transition={{ duration: 1.2 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
+              className="relative md:w-[600px] md:h-[300px] w-96 h-40  "
             >
               <Image
                 src={`/projects/${project.img}`}
                 className="object-contain"
-                width={600}
-                height={300}
-                alt=""
+                alt={project.Name}
+                fill
               />
             </motion.div>
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
+              <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7Ab0A]/50">
                   Case Study {i + 1} of {projects.length}:
                 </span>{" "}
                 {project.Name}
               </h4>
-              <p>{project.Summary}</p>
+              <p className="text-xs sm:text-sm md:text-base text-center md:text-left">
+                {project.Summary}
+              </p>
             </div>
           </div>
         ))}

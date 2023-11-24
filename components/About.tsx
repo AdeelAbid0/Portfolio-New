@@ -8,7 +8,7 @@ function About({}: Props) {
   return (
     <SectionWrapper
       heading={"About"}
-      className="flex flex-col md:flex-row  text-center md:text-left  pt-24 sm:pt-10  md:pt-0 max-w-7xl px-10 justify-evenly mx-auto items-center"
+      className="flex flex-col md:flex-row  text-center md:text-left  pt-16 sm:pt-24  max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
       <motion.img
         initial={{
@@ -20,7 +20,7 @@ function About({}: Props) {
           duration: 1.2,
         }}
         src="https://avatars.githubusercontent.com/u/101820380?s=400&u=622c5ae10172a3738daea1c249a1e8edf7cc372a&v=4"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px]"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px] "
       />
       <motion.div
         initial={{

@@ -13,7 +13,7 @@ function Skill({ directionLeft, img, proficiency, bg }: Props) {
     <div className="group relative cursor-pointer">
       <motion.img
         initial={{
-          x: directionLeft ? -200 : 200,
+          x: directionLeft ? -20 : 20,
           opacity: 0,
         }}
         transition={{ duration: 1 }}
@@ -25,7 +25,7 @@ function Skill({ directionLeft, img, proficiency, bg }: Props) {
       />
       <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:w-16 md:h-16 h-10 w-10">
         <div className="flex items-center justify-center h-full">
-          <p className="text-3xl font-bold text-black opacity-100">
+          <p className="text-lg font-bold text-black opacity-100">
             {proficiency}%
           </p>
         </div>
