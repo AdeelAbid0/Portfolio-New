@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 type Props = {};
 const projects = [
   {
@@ -68,15 +68,21 @@ function Projects({}: Props) {
             key={i}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
           >
-            <motion.img
+            <motion.div
               initial={{ y: -300, opacity: 0 }}
               transition={{ duration: 1.2 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
-              src={`./projects/${project.img}`}
-              className="w-[600px] object-contain"
-              alt=""
-            />
+            >
+              <Image
+                src={`/projects/${project.img}`}
+                className="object-contain"
+                width={600}
+                height={300}
+                alt=""
+              />
+            </motion.div>
+
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7Ab0A]/50">
@@ -88,9 +94,6 @@ function Projects({}: Props) {
             </div>
           </div>
         ))}
-        {/* project */}
-        {/* project */}
-        {/* project */}
       </div>
 
       <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
