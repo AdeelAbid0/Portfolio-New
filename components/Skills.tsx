@@ -67,6 +67,7 @@ function Skills({}: Props) {
                   bg={skillSet.bg}
                   img={skillSet.name}
                   proficiency={skillSet.proficiency}
+                  key={index}
                 />
               ))}
             </div>
