@@ -1,14 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SectionWrapper from "./SectionWrapper";
 
 type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="h-screen flex flex-col relative text-center md:text-left  pt-24 sm:pt-10 md:flex-row md:pt-0 max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-xl sm:text-2xl">
-        About
-      </h3>
+    <SectionWrapper
+      heading={"About"}
+      className="flex flex-col md:flex-row  text-center md:text-left  pt-24 sm:pt-10  md:pt-0 max-w-7xl px-10 justify-evenly mx-auto items-center"
+    >
       <motion.img
         initial={{
           x: -200,
@@ -53,7 +54,7 @@ function About({}: Props) {
           experiences sparkle in the mystical glow of technology! ✨🌟`}
         </p>
       </motion.div>
-    </div>
+    </SectionWrapper>
   );
 }
 
