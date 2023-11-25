@@ -24,10 +24,10 @@ function ExperienceCard({ experience }: Props) {
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="h-14 w-14 sm:h-20 sm:w-20 md:h-32 md:w-32   bg-white rounded-full flex justify-center items-center overflow-hidden"
+        className="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20   bg-white rounded-full flex justify-center items-center overflow-hidden"
       >
         <img
-          className={`h-16 w-16 md:h-20 md:w-20 object-contain `}
+          className={`h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 object-contain `}
           src={`./experience/${experience.img}`}
           alt=""
         />
