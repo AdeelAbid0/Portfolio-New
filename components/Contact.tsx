@@ -1,6 +1,7 @@
 import React from "react";
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
+import SectionWrapper from "./SectionWrapper";
 interface Inputs {
   name: string;
   email: string;
@@ -8,26 +9,20 @@ interface Inputs {
   message: string;
 }
 
-type Props = {};
-
-function Contact({}: Props) {
+function Contact() {
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     window.location.href = `mailto:akdevjs@gmail?subject=${formData.subject}&body=Hi, My name is ${formData.name}. ${formData.message}. \n(${formData.email})`;
   };
   return (
-    <div className="relative h-screen flex flex-col justify-center items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-xl sm:text-2xl">
-        Contact
-      </h3>
-
-      <div className="flex flex-col pt-10 space-y-10">
+    <SectionWrapper heading="Contact">
+      <div className="flex flex-col pt-2 sm:pt-10 space-y-2 sm:space-y-10">
         <h4 className="text-lg sm:text-2xl md:text-4xl font-semibold text-center sm:whitespace-nowrap whitespace-break-spaces">
           I have got just what you need.{" \n"}
           <span className="underline decoration-[#F7AB0A]/50">Lets Talk</span>
         </h4>
 
-        <div className="space-y-5 md:space-y-10">
+        <div className="space-y-2 sm:space-y-5 md:space-y-10">
           <div className="flex item-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
             <p>+92 341 4307524</p>
@@ -79,7 +74,7 @@ function Contact({}: Props) {
           </button>
         </form>
       </div>
-    </div>
+    </SectionWrapper>
   );
 }
 

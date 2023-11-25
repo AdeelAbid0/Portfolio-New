@@ -2,9 +2,9 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Link from "next/link";
-type Props = {};
+import Image from "next/image";
 
-function Hero({}: Props) {
+function Hero() {
   const [text, count] = useTypewriter({
     words: [
       'Hi, Name\'s Abdullah "AK" Khan',
@@ -18,11 +18,9 @@ function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <img
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="./profile.jpeg"
-        alt=""
-      />
+      <div className="relative rounded-full h-32 w-32 mx-auto object-cover overflow-hidden">
+        <Image className="object-cover" src="/profile.jpeg" alt="AK" fill />
+      </div>
       <div className="z-20">
         <h2 className=" tracking-[5px] text-sm uppercase text-gray-500 pb-2 sm:tracking-[15px]">
           Software Engineer

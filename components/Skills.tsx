@@ -2,47 +2,29 @@ import React from "react";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
 import SectionWrapper from "./SectionWrapper";
-type Props = {};
-const skills = [
-  {
-    title: "Languages",
-    set: [
-      { name: "c++", proficiency: 65 },
-      { name: "python", proficiency: 70 },
-      { name: "javaScript", proficiency: 85 },
-      { name: "typeScript", proficiency: 80 },
-    ],
-  },
-  {
-    title: "Teachnologies",
-    set: [
-      { name: "nextjs", proficiency: 80, bg: true },
-      { name: "reactjs", proficiency: 90 },
-      { name: "redux", proficiency: 80 },
-      { name: "mobx", proficiency: 80 },
-      { name: "jotai", proficiency: 75 },
-      { name: "emotion", proficiency: 80 },
-      { name: "styled-components", proficiency: 80, bg: true },
-      { name: "sass", proficiency: 85 },
-      { name: "tailwind", proficiency: 80 },
-      { name: "storybook", proficiency: 70 },
-      { name: "frammer-motion", proficiency: 65, bg: true },
-      { name: "firebase", proficiency: 80 },
-    ],
-  },
-  {
-    title: "Tools",
-    set: [
-      { name: "vscode", proficiency: 65 },
-      { name: "git", proficiency: 75 },
-      { name: "github", proficiency: 80 },
-      { name: "xd", proficiency: 70 },
-      { name: "photoshop", proficiency: 60 },
-      { name: "figma", proficiency: 85 },
-    ],
-  },
-];
-function Skills({}: Props) {
+
+interface SkillT {
+  title: string;
+  set: (
+    | {
+        name: string;
+        proficiency: number;
+        bg: boolean;
+      }
+    | {
+        name: string;
+        proficiency: number;
+        bg?: undefined;
+      }
+  )[];
+}
+[];
+
+interface Props {
+  skills: SkillT[];
+}
+
+function Skills({ skills }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -67,6 +49,9 @@ function Skills({}: Props) {
                     img={skillSet.name}
                     proficiency={skillSet.proficiency}
                     key={index}
+                    directionLeft={
+                      index + 1 <= 5 ? true : index + 1 <= 10 ? false : true
+                    }
                   />
                 ))}
               </div>

@@ -7,6 +7,7 @@ import WorkExperience from "../components/WorkExperience";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import data from "../data.json";
 
 const Home: NextPage = () => {
   return (
@@ -17,23 +18,23 @@ const Home: NextPage = () => {
 
       <Header />
 
-      <section id="hero" className="snap-start">
+      <section id="home" className="snap-start">
         <Hero />
       </section>
       <section id="about" className="snap-center">
-        <About />
+        <About about={data.about} />
       </section>
 
       <section id="experience" className="snap-center">
-        <WorkExperience />
+        <WorkExperience experiences={data.experiences} />
       </section>
 
       <section id="skills" className="snap-center">
-        <Skills />
+        <Skills skills={data.skills} />
       </section>
 
       <section id="projects" className="snap-center">
-        <Projects />
+        <Projects projects={data.projects} />
       </section>
 
       <section id="contact" className="snap-center">
