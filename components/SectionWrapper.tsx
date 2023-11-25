@@ -9,8 +9,8 @@ type Props = {
 
 function SectionWrapper({ children, className, heading, tagline }: Props) {
   return (
-    <div className="h-screen flex justify-center items-center">
-      <div className="pt-10 h-[80vh] sm:h-screen flex flex-col items-center justify-center">
+    <div className="h-screen flex flex-col justify-center">
+      <div className="pt-10 h-[85vh] sm:h-screen flex flex-col items-center justify-center">
         <h3 className="uppercase tracking-[10px] sm:tracking-[20px] text-gray-500 text-lg sm:text-xl md:text-2xl">
           {heading}
         </h3>

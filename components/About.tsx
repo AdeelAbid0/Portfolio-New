@@ -8,7 +8,7 @@ function About({}: Props) {
   return (
     <SectionWrapper
       heading={"About"}
-      className="flex flex-col md:flex-row  text-center md:text-left  pt-16 sm:pt-24  max-w-7xl px-10 justify-evenly mx-auto items-center"
+      className="flex flex-col md:flex-row  text-center md:text-left  pt-16 sm:pt-24  max-w-7xl px-5 sm:px-10 justify-evenly mx-auto items-center"
     >
       <motion.img
         initial={{
@@ -20,7 +20,7 @@ function About({}: Props) {
           duration: 1.2,
         }}
         src="https://avatars.githubusercontent.com/u/101820380?s=400&u=622c5ae10172a3738daea1c249a1e8edf7cc372a&v=4"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px] "
+        className="-mb-10 sm:-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px] "
       />
       <motion.div
         initial={{
@@ -31,9 +31,9 @@ function About({}: Props) {
         transition={{
           duration: 1.2,
         }}
-        className="space-y-10 px-0 md:px-10"
+        className="space-y-5 sm:space-y-10 px-0 md:px-10"
       >
-        <h4 className="text-2xl  sm:text-4xl lg:text-5xl font-semibold text-center">
+        <h4 className="text-xl  sm:text-4xl lg:text-5xl font-semibold text-center">
           Here is a{" "}
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           Background

@@ -18,13 +18,13 @@ function ExperienceCard({ experience }: Props) {
     <article className="flex flex-col rounded-lg items-center space-y-2 md:space-y-7 flex-shrink-0 w-[80vw] sm:w-[400px] md:w-[500px] xl:w-[600px] opacity-40 hover:opacity-100 snap-center bg-[#292929] p-5 transition-opacity duration-200 overflow-hidden overflow-y-auto">
       <motion.div
         initial={{
-          y: -100,
+          y: -50,
           opacity: 0,
         }}
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="h-20 w-20 md:h-32 md:w-32   bg-white rounded-full flex justify-center items-center overflow-hidden"
+        className="h-14 w-14 sm:h-20 sm:w-20 md:h-32 md:w-32   bg-white rounded-full flex justify-center items-center overflow-hidden"
       >
         <img
           className={`h-16 w-16 md:h-20 md:w-20 object-contain `}

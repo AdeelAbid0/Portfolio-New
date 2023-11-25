@@ -22,11 +22,11 @@ const experiences: ExperienceT[] = [
     endDate: "Present",
     techStack: ["reactjs", "mobx", "emotion", "storybook", "vscode"],
     summary: [
-      "Contributed as a Frontend Software Engineer in a company specializing in surveillance products.",
-      "Led the transition of a legacy Angular application to React using a strategic bridge approach.",
-      "Played a crucial role in integrating new features seamlessly into the React portion of the application.",
-      "Demonstrated adaptability and problem-solving skills in a complex software development environment.",
-      "Utilized Agile methodologies for efficient project execution and continuous improvement.",
+      "Frontend Software Engineer at a surveillance products company.",
+      "Led transition from legacy Angular to React using a strategic bridge approach.",
+      "Integrated new features seamlessly into the React portion of the application.",
+      "Demonstrated adaptability and problem-solving in a complex software development environment.",
+      "Implemented Agile methodologies for efficient project execution and continuous improvement.",
     ],
   },
   {
