@@ -19,6 +19,7 @@ function About({}: Props) {
         transition={{
           duration: 1.2,
         }}
+        viewport={{ once: true }}
         src="https://avatars.githubusercontent.com/u/101820380?s=400&u=622c5ae10172a3738daea1c249a1e8edf7cc372a&v=4"
         className="-mb-10 sm:-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px] "
       />
@@ -31,6 +32,7 @@ function About({}: Props) {
         transition={{
           duration: 1.2,
         }}
+        viewport={{ once: true }}
         className="space-y-5 sm:space-y-10 px-0 md:px-10"
       >
         <h4 className="text-xl  sm:text-4xl lg:text-5xl font-semibold text-center">
