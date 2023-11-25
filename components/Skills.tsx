@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Skill from "./Skill";
 import SectionWrapper from "./SectionWrapper";
@@ -30,7 +29,7 @@ function Skills({ skills }: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="min-h-screen relative flex flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 justify-center xl:space-y-0 items-center"
+      className="min-h-screen relative flex flex-col text-center md:text-left xl:flex-row mx-auto max-w-[2000px] xl:px-10 justify-center xl:space-y-0 items-center"
     >
       <SectionWrapper
         heading="Skills"

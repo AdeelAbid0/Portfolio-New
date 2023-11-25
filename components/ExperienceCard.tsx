@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 interface Props {
@@ -44,6 +43,7 @@ function ExperienceCard({ experience }: Props) {
         <div className="flex space-x-2 my-2">
           {experience.techStack.map((tech, index) => (
             <div
+              key={index}
               className={`relative overflow-hidden h-4 w-4 md:h-6  md:w-6 rounded-full ${
                 tech === "nextjs" ||
                 tech === "styled-components" ||
