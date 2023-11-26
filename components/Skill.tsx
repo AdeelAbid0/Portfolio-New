@@ -26,7 +26,7 @@ function Skill({ directionLeft, img, proficiency, bg }: Props) {
           fill
           className="object-contain"
           alt={img}
-          src={`/skills/${img}.png`}
+          src={`/skills/${img}.webp`}
         />
       </motion.div>
       <motion.div
@@ -44,7 +44,7 @@ function Skill({ directionLeft, img, proficiency, bg }: Props) {
           fill
           className="object-contain"
           alt={img}
-          src={`/skills/${img}.png`}
+          src={`/skills/${img}.webp`}
         />
       </motion.div>
       <div className=" absolute inset-0 rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white md:w-16 md:h-16 h-10 w-10">

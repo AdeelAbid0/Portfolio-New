@@ -56,7 +56,7 @@ function ExperienceCard({ experience }: Props) {
                 fill
                 className="object-contain"
                 alt={tech}
-                src={`/skills/${tech}.png`}
+                src={`/skills/${tech}.webp`}
                 key={index}
               />
             </div>
