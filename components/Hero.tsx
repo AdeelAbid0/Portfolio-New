@@ -18,7 +18,7 @@ function Hero() {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <div className="relative rounded-full h-32 w-32 mx-auto object-cover overflow-hidden">
-        <Image className="object-cover" src="/profile.jpeg" alt="AK" fill />
+        <Image className="object-cover" src="/profile.webp" alt="AK" fill />
       </div>
       <div className="z-20">
         <h2 className=" tracking-[5px] text-sm uppercase text-gray-500 pb-2 sm:tracking-[15px]">
