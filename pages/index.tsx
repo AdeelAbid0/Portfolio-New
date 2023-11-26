@@ -11,7 +11,7 @@ import data from "../data.json";
 
 const Home: NextPage = () => {
   return (
-    <div className="overflow-x-hidden bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory z-0 sm:scrollbar sm:scrollbar-track-gray-400/20 sm:scrollbar-thumb-[#F7AB0A]">
+    <div className="overflow-x-hidden bg-[rgb(36,36,36)] text-white h-screen md:snap-y md:snap-mandatory z-0 sm:scrollbar sm:scrollbar-track-gray-400/20 sm:scrollbar-thumb-[#F7AB0A]">
       <Head>
         <title>{"Ak's"} Portfolio</title>
         <link
@@ -36,26 +36,26 @@ const Home: NextPage = () => {
 
       <Header />
 
-      <section id="home" className="snap-start">
+      <section id="home" className="md:snap-start">
         <Hero />
       </section>
-      <section id="about" className="snap-center">
+      <section id="about" className="md:snap-center">
         <About about={data.about} />
       </section>
 
-      <section id="experience" className="snap-center">
+      <section id="experience" className="md:snap-center">
         <WorkExperience experiences={data.experiences} />
       </section>
 
-      <section id="skills" className="snap-center">
+      <section id="skills" className="md:snap-center">
         <Skills skills={data.skills} />
       </section>
 
-      <section id="projects" className="snap-center">
+      <section id="projects" className="md:snap-center">
         <Projects projects={data.projects} />
       </section>
 
-      <section id="contact" className="snap-center">
+      <section id="contact" className="md:snap-center">
         <Contact />
       </section>
     </div>
