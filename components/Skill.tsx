@@ -18,6 +18,7 @@ function Skill({ directionLeft, img, proficiency, bg }: Props) {
         }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
         className={`flex md:hidden relative overflow-hidden rounded-full border border-gray-500 object-cober md:w-16 md:h-16 h-10 w-10 filter group group-hover::grayscale transition duration-300 ease-in-out object-contain  ${
           bg ? "bg-white" : "bg-transparent"
         }`}
@@ -36,6 +37,7 @@ function Skill({ directionLeft, img, proficiency, bg }: Props) {
         }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
         className={`hidden md:flex relative overflow-hidden rounded-full border border-gray-500 object-cober md:w-16 md:h-16 h-10 w-10 filter group group-hover::grayscale transition duration-300 ease-in-out object-contain  ${
           bg ? "bg-white" : "bg-transparent"
         }`}
