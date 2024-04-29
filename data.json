@@ -12,7 +12,6 @@
       "endDate": "Present",
       "techStack": [
         "python",
-        "typescript",
         "reactjs",
         "redux",
         "emotion",
