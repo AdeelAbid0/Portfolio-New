@@ -11,7 +11,7 @@ interface Inputs {
 function Contact() {
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:akdevjs@gmail?subject=${formData.subject}&body=Hi, My name is ${formData.name}. ${formData.message}. \n(${formData.email})`;
+    window.location.href = `mailto:adeelabid0855@gmail.com?subject=${formData.subject}&body=Hi, My name is ${formData.name}. ${formData.message}. \n(${formData.email})`;
   };
   return (
     <SectionWrapper heading="Contact">
@@ -24,11 +24,11 @@ function Contact() {
         <div className="space-y-2 sm:space-y-5 md:space-y-10">
           <div className="flex item-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
-            <p>+92 341 4307524</p>
+            <p>+92 3185499735</p>
           </div>
           <div className="flex item-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />
-            <p>akdevjs@outlook.com</p>
+            <p>adeelabid0855@gmail.com</p>
           </div>
           <div className="flex item-center space-x-5 justify-center">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse " />

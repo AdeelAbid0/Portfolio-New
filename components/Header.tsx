@@ -22,12 +22,14 @@ function Header() {
       >
         {/* Social icons */}
         <SocialIcon
-          url={"https://linkedin.com/in/akdevjs"}
+          url={
+            "https://www.linkedin.com/in/adeelabid0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          }
           fgColor={"gray"}
           bgColor={"transparent"}
         />
         <SocialIcon
-          url={"https://github.com/akdevjs"}
+          url={"https://github.com/AdeelAbid0"}
           fgColor="gray"
           bgColor="transparent"
         />
@@ -52,9 +54,7 @@ function Header() {
         <Link
           href="#home"
           className="text-xl sm:text-2xl flex items-center text-gray-400 tracking-[-6px] uppercase font-bold"
-        >
-          <span className="text-[#F7AB0A]">A</span>K
-        </Link>
+        ></Link>
       </motion.div>
     </header>
   );
